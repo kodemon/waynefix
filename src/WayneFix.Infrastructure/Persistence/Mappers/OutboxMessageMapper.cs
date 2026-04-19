@@ -1,8 +1,9 @@
 using System.Text.Json;
 using WayneFix.Domain.Entities;
 using WayneFix.Domain.Values;
+using WayneFix.Infrastructure.Persistence.Records;
 
-namespace WayneFix.Infrastructure.Persistence;
+namespace WayneFix.Infrastructure.Persistence.Mappers;
 
 public static class OutboxMessageMapper
 {

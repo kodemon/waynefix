@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/WayneFix.Api/WayneFix.Api.csproj" />
+    <Project Path="src/WayneFix.Application/WayneFix.Application.csproj" />
+    <Project Path="src/WayneFix.Domain/WayneFix.Domain.csproj" />
+    <Project Path="src/WayneFix.Infrastructure/WayneFix.Infrastructure.csproj" />
+    <Project Path="src/WayneFix.Workers/WayneFix.Workers.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/WayneFix.Tests/WayneFix.Tests.csproj" />
+  </Folder>
+</Solution>

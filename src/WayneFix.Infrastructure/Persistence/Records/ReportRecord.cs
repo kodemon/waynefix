@@ -1,4 +1,4 @@
-namespace WayneFix.Infrastructure.Persistence;
+namespace WayneFix.Infrastructure.Persistence.Records;
 
 public class ReportRecord
 {

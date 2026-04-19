@@ -5,6 +5,7 @@ using WayneFix.Application.Services;
 using WayneFix.Domain.Interfaces;
 using WayneFix.Infrastructure.Email;
 using WayneFix.Infrastructure.Persistence;
+using WayneFix.Infrastructure.Persistence.Repositories;
 using Workers;
 
 var builder = WebApplication.CreateBuilder(args);

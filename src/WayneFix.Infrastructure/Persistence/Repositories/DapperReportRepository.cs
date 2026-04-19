@@ -3,8 +3,10 @@ using Dapper;
 using WayneFix.Domain.Entities;
 using WayneFix.Domain.Interfaces;
 using WayneFix.Domain.Values;
+using WayneFix.Infrastructure.Persistence.Mappers;
+using WayneFix.Infrastructure.Persistence.Records;
 
-namespace WayneFix.Infrastructure.Persistence;
+namespace WayneFix.Infrastructure.Persistence.Repositories;
 
 public class DapperReportRepository(DbContext context) : IReportRepository
 {
@@ -26,7 +28,7 @@ public class DapperReportRepository(DbContext context) : IReportRepository
                     report.Id,
                     report.Text,
                     report.Location,
-                    report.Status,
+                    Status = report.Status.ToString(),
                     report.CreatedAt,
                 },
                 transaction
@@ -38,7 +40,7 @@ public class DapperReportRepository(DbContext context) : IReportRepository
                 {
                     message.Id,
                     message.CorrelationId,
-                    message.Type,
+                    Type = message.Type.ToString(),
                     message.Payload,
                     Errors = "[]",
                     message.CreatedAt,

@@ -1,6 +1,7 @@
 using WayneFix.Domain.Entities;
+using WayneFix.Infrastructure.Persistence.Records;
 
-namespace WayneFix.Infrastructure.Persistence;
+namespace WayneFix.Infrastructure.Persistence.Mappers;
 
 public static class ReportMapper
 {
